@@ -4,8 +4,88 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+		#header {
+			font-size: 40px;
+		}
+		.lesson {
+			color: red;
+		}
+		div p {
+			color: red;
+		}
+		div > p {
+			color: blue;
+		}
+		[href] {
+			color: red;
+		}
+		[href="25h"] {
+			color: yellow;
+		}
+		[target] {
+			color: blue;
+		}
+		[name = "name"] {
+			background: yellowgreen;
+		}
+		[name = "class"] {
+			background: rgb(30, 50, 60);
+		}
+		p::after {
+			content:"this remember ";
+			color: red;
+			background: yellow;
+			font-weight: bold;
+			font-size: 30px;
+		}
+		ul > li:first-child {
+			color: blue;
+		}
+		ul:first-line {
+			color: green;
+		}
+	</style>
 </head>
 <body>
-	<h1> Vu Minh Dung </h1>
+	<div id="header"> Header </div>
+	<div id="container">  
+		<a href="24h"> Link1</a>
+		<a href="25h"> Link2</a>
+		<a href="26h"> Link3</a>
+		<a href="youtube.com.vn" target="_blank"> Link4 </a>
+		<ul>
+			<li class="lesson"> lesson2 </li>
+			<li class="lesson"> lesson2 </li>
+			<li class="lesson"> lesson2 </li>
+		</ul>
+		<input type="" name="name">
+		<input type="text" name="class">
+		<br>
+		<input type="checkbox" name="checkbox1">
+		<br>
+		<input type="radio" name="name">
+		<input type="radio" name="name">
+		<br>
+		<input type="submit" name="name">
+		<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vero?</p>
+		<p> after </p>
+	</div>
+	<div>
+		Test 3
+		<p> Test 1 </p>
+		<p> Test 2 </p>
+		<a href=""> Link5 </a>
+		<span> Test 4 
+		<p> Test 5 </p>
+	</span>
+	</div>
+	<div>
+		<div>
+			<p> Test 6 </p>
+		</div>
+	</div>
+	<div id="footer"> Footer 
+	</div>
 </body>
 </html>
